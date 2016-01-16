@@ -1,0 +1,10 @@
+﻿<!--<pre data-bind="text: ko.toJSON($data, null, 2)"></pre>-->
+<div class="zoom-gallery" data-bind="foreach: { data: images, as: 'image' }, ready: {}">
+	<a data-bind="attr: { href: image.href }"
+       title="_" 
+       style="width:193px; height:125px;">
+
+		<img data-bind="attr: { src: image.href }" height="125" width="193">
+	</a>
+</div>
+<img src="" />
