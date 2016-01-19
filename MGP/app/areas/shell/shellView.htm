@@ -1,0 +1,46 @@
+﻿<div>
+    <div class="navbar navbar-fixed-top" style="background-color: white; width: 100%;">
+        <div style="height: 100%">
+            <div style="float: left;">
+                <img src="app/css/images/mgp_logo.png" />
+            </div>
+        
+            <div style="padding: 10px; float: right; text-align: right;">
+                <a>English</a>
+                <a data-bind="click: function (){ alert('Coming Soon'); }">Español</a>
+            </div>
+            <div style="float: right; height: 100%; ">
+                <img src="app/css/images/logo_name_blue_en.png" style="vertical-align: bottom" />
+            </div>
+        </div>
+        <div class="btn-toolbar">
+            <div class="btn-group" style="width: 100%; height: 55px;"
+                 data-bind="foreach: buttons">
+                <a style="white-space: normal; height: 100%;"
+                   data-bind="page-href: $data.href,
+                              click: function(){ $parent.headerClick($data.href); return true; },
+                              css: { 'btn': true, 
+                                     'headerbutton': true,
+                                     'selectedbutton': ($data.href === $parent.targetHref())
+                                   } ">
+                    <span data-bind="text: $data.title"></span>
+                </a>    
+            </div>
+        </div>
+    </div>
+    <div class="container" style="max-width:100%; height: 100%;">
+        <div class="content" style="border: none; padding: 0px 5px; height: 100%;">
+            <div data-bind="page: { id: 'start', sourceOnShow: 'app/areas/home/homeView.htm', withOnShow: requireVm('home/homeViewModel') }" style="height: 100%"></div>   
+            <div data-bind="page: { id: 'photos', sourceOnShow: 'app/areas/photos/photosView.htm', withOnShow: requireVm('photos/photosViewModel') }" style="height: 100%"></div>   
+            <div data-bind="page: { id: 'donate', sourceOnShow: 'app/areas/donate/donateView.htm', withOnShow: requireVm('donate/donateViewModel') }" style="height: 100%"></div>   
+            <div data-bind="page: { id: 'mission', sourceOnShow: 'app/areas/mission/missionView.htm', withOnShow: requireVm('mission/missionViewModel') }" style="height: 100%"></div>   
+            <div data-bind="page: { id: 'history', sourceOnShow: 'app/areas/history/historyView.htm', withOnShow: requireVm('history/historyViewModel') }" style="height: 100%"></div>   
+            <div data-bind="page: { id: 'volunteer', sourceOnShow: 'app/areas/volunteer/volunteerView.htm', withOnShow: requireVm('volunteer/volunteerViewModel') }" style="height: 100%"></div>   
+            <div data-bind="page: { id: 'legal', sourceOnShow: '/app/areas/legal/legalView.htm', withOnShow: requireVm('legal/legalViewModel') }" style="height: 100%"></div>   
+            <div data-bind="page: { id: 'contact', sourceOnShow: 'app/areas/contact/contactView.htm', withOnShow: requireVm('contact/contactViewModel') }" style="height: 100%"></div>   
+            <div data-bind="page: { id: 'about', sourceOnShow: 'app/areas/about/aboutView.htm', withOnShow: requireVm('about/aboutViewModel') }" style="height: 100%"></div>   
+        </div>
+    </div>
+</div>
+
+<div data-bind="page: { id: 'infoFooter', urlToggle: 'show', source: 'app/areas/info/infoFooterView.htm', sourceLoaded: showPage }"></div>   
