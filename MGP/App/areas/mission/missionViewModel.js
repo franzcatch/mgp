@@ -8,7 +8,7 @@
             var files = [
                 {
                     text: 'Mission Vision Objectives October  2013(1)',
-                    url: 'app/files/Mission/Mission%20Vision%20Objectives%20October%202013(1).pdf'
+                    url: 'app/files/mission/Mission%20Vision%20Objectives%20October%202013(1).pdf'
                 }
             ];
             

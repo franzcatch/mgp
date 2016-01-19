@@ -8,7 +8,7 @@
             var files = [
                 {
                     text: 'MGP Support Group 2013',
-                    url: 'app/files/Contact/MGP%20Support%20Group%202013.pdf'
+                    url: 'app/files/contact/MGP%20Support%20Group%202013.pdf'
                 }
             ];
 

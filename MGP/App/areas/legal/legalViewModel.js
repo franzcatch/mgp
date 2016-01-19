@@ -8,11 +8,11 @@
             var files = [
                 {
                     text: 'Legal Info',
-                    url: 'app/files/Legal/Legal Info.pdf'
+                    url: 'app/files/legal/Legal Info.pdf'
                 },
                 {
                     text: 'MGP Conflict of Interest Policy',
-                    url: 'app/files/Legal/MGP Conflict of Interest Policy.pdf'
+                    url: 'app/files/legal/MGP Conflict of Interest Policy.pdf'
                 }
             ];
             

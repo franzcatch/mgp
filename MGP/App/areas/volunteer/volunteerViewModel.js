@@ -8,11 +8,11 @@
             var files = [
                 {
                     text: 'Volunteers',
-                    url: 'app/files/Volunteer/Volunteers.pdf'
+                    url: 'app/files/volunteer/Volunteers.pdf'
                 },
                 {
                     text: 'How to get INVOLVED with the MGP Program',
-                    url: 'app/files/Volunteer/How%20to%20get%20INVOLVED%20with%20the%20MGP%20Program.pdf'
+                    url: 'app/files/volunteer/How%20to%20get%20INVOLVED%20with%20the%20MGP%20Program.pdf'
                 }
             ];
 
